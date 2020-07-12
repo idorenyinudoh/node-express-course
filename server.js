@@ -16,6 +16,13 @@ app.get('/users', (req, res) => {
     });
 });
 
+app.get('/2-baba', (req, res) => {
+    res.json({
+        name: '2 Baba',
+        album: 'Warriors'
+    });
+});
+
 app.get('/users/:id', (req, res) => {
     console.log(req.params.id);
     res.json({
